@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nabil Muflih Hanan">
+    <title>Nilai Akademik</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <button id="toggle-dark-mode">
+            <span class="icon-moon"></span>
+        </button>
+    </nav>
+    <div class="container">
+        <h1>Menghitung Nilai Akademik</h1>
+        <p>Masukkan nilai kamu:</p>
+            <div class="input">
+                <form id="nilaiForm">
+                <input class="form" type="number" id="nilai" min="0" max="100" placeholder="Masukkan Nilai 0-100" required="" oninvalid="this.setCustomValidity('Hanya nilai 1-100')"
+                oninput="setCustomValidity('')">
+                <button class="btn" type="submit">Hasil</button>
+                <br>
+                <label id="hasil-value"></label>
+                <br>
+                <label id="bil-value"></label>
+                </form>
+            </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
